@@ -1,17 +1,29 @@
 Package: dogmabio
-Title: An Amazing Shiny App
+Title: PKG_TITLE
 Version: 0.0.0.9000
-Authors@R: 
-    person(given = "firstname",
-           family = "lastname",
-           role = c("aut", "cre"),
-           email = "your@email.com")
-Description: What the package does (one paragraph).
-License: What license is it under?
+Author@R: c(person(given = "Eva",
+           family = "Frossard",
+           role = c("aut", "cre"), # There must be a "cre", but there can only be one
+           email = "s231701@student.dtu.dk"), 
+    person(given = "Pauline",
+           family = "Charpentier",
+           role = "aut",
+           email = "s231663@student.dtu.dk")), 
+    person(given = "Noy",
+           family = "Tabur",
+           role = "aut",
+           email = "s232743@student.dtu.dk")), 
+    person(given = "Fabian",
+           family = "Ziegler",
+           role = "aut",
+           email = "s231932@student.dtu.dk"))
+Description: PKG_DESC.
+License: MIT + file LICENSE
 Imports: 
     config (>= 0.3.1),
     golem (>= 0.4.1),
+    pkgload,
     shiny (>= 1.7.5)
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.1.1
+RoxygenNote: 7.2.3
