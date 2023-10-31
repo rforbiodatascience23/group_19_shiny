@@ -34,7 +34,7 @@ mod_abundance_ui <- function(id){
 #' abundance Server Functions
 #'
 #'@importfrom ggplot2 theme
-#'@import Centraldogmabio
+#'@import centralDogma
 #' @noRd
 mod_abundance_server <- function(id){
   moduleServer( id, function(input, output, session){
@@ -44,7 +44,7 @@ mod_abundance_server <- function(id){
         NULL
       } else{
         input$peptide |>
-          Centraldogmabio::plot_function(input$peptide) +
+          centralDogma::plot_abundance() +
           ggplot2::theme(legend.position = "none")
       }
     })
